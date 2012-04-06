@@ -1,0 +1,53 @@
+[
+  // cmd+l = go to line
+  {
+    "keys": ["super+l"],
+    "command": "show_overlay",
+    "args": {"overlay": "goto", "text": ":"}
+  },
+
+  // cmd+shift+c = copy file name
+  {
+    "keys": ["super+shift+c"],
+    "command": "copy_path_to_clipboard"
+  },
+
+  // ctags
+  {
+    "keys": ["ctrl+]"],
+    "command": "navigate_to_definition"
+  },
+
+  // go to alternate file
+  {
+    "keys": ["ctrl+shift+down"],
+    "command": "open_rspec_file", "args": {"option": "next"}
+  },
+
+  // Duplicate selection
+  { "keys": ["ctrl+shift+d"], "command": "duplicate_line" }
+
+  // allow split window for spec and implementation
+
+  // make command+shift+d de-select the next match
+
+  // Run coffeescript spec
+
+  // open plugins directory
+
+  // go to alternate coffeescript file
+
+  // -G for find in project
+
+  // sass bundle
+
+  // show in project drawer
+
+  // to see output:
+  // sublime.log_commands(True)
+
+  // run spec
+  // http://pastebin.com/qVSjKFNV
+  // http://sublimetext.userecho.com/topic/94718-open-terminal-here-as-tab-instead-of-window-if-possible/
+
+]

@@ -1,0 +1,15 @@
+{
+	"auto_upgrade_last_run": 1333718205,
+	"installed_packages":
+	[
+		"Alignment",
+		"CoffeeScript",
+		"CTags",
+		"DetectSyntax",
+		"Git",
+		"Jasmine",
+		"Package Control",
+		"RSpec",
+		"Theme - Soda"
+	]
+}
