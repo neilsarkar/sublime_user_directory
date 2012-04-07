@@ -25,7 +25,10 @@
   },
 
   // Duplicate selection
-  { "keys": ["ctrl+shift+d"], "command": "duplicate_line" }
+  { "keys": ["ctrl+shift+d"], "command": "duplicate_line" },
+
+  // show in project drawer
+  { "keys": ["ctrl+super+r"], "command": "reveal_in_side_bar"}
 
   // allow split window for spec and implementation
 
@@ -40,9 +43,7 @@
   // -G for find in project
 
   // sass bundle
-
-  // show in project drawer
-
+  
   // to see output:
   // sublime.log_commands(True)
 
