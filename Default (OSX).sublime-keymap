@@ -28,7 +28,13 @@
   { "keys": ["ctrl+shift+d"], "command": "duplicate_line" },
 
   // show in project drawer
-  { "keys": ["ctrl+super+r"], "command": "reveal_in_side_bar"}
+  { "keys": ["ctrl+super+r"], "command": "reveal_in_side_bar"},
+
+  {
+    "keys": ["ctrl+shift+down"],
+    "command": "open_coffee_twin",
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.coffee"} ]
+  }
 
   // allow split window for spec and implementation
 
@@ -36,14 +42,14 @@
 
   // Run coffeescript spec
 
-  // open plugins directory
-
   // go to alternate coffeescript file
+
+  // open plugins directory
 
   // -G for find in project
 
   // sass bundle
-  
+
   // to see output:
   // sublime.log_commands(True)
 
