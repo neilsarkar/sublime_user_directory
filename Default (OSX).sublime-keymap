@@ -30,6 +30,7 @@
   // show in project drawer
   { "keys": ["ctrl+super+r"], "command": "reveal_in_side_bar"},
 
+  // select coffeescript twin
   {
     "keys": ["ctrl+shift+down"],
     "command": "open_coffee_twin",

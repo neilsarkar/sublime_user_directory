@@ -1,0 +1,6 @@
+{
+  "erb_exec": "bundle exec erb",
+  "ruby_unit_exec": "bundle exec ruby",
+  "ruby_cucumber_exec": "bundle exec cucumber -f pretty",
+  "ruby_rspec_exec": "bundle exec rspec"
+}
