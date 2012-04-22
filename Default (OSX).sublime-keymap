@@ -1,4 +1,11 @@
 [
+  // cmd+ctrl+, = open this file
+  {
+    "keys": ["super+ctrl+,"],
+    "command": "open_file",
+    "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"}
+  },
+
   // cmd+l = go to line
   {
     "keys": ["super+l"],
@@ -19,6 +26,7 @@
   },
 
   // go to alternate file
+  // super+ctrl+. will show spec and implementation in split view
   {
     "keys": ["ctrl+shift+down"],
     "command": "open_rspec_file", "args": {"option": "next"}
@@ -35,21 +43,28 @@
     "keys": ["ctrl+shift+down"],
     "command": "open_coffee_twin",
     "context": [ {"key": "selector", "operator": "equal", "operand": "source.coffee"} ]
-  }
+  },
 
-  // allow split window for spec and implementation
+  // compile and display coffeescript
+  {
+    "keys": ["super+b"],
+    "command": "compile_and_display_js",
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.coffee"} ]
+  }
 
   // make command+shift+d de-select the next match
 
-  // Run coffeescript spec
+  // command+shift+down switch between controller and view
 
-  // go to alternate coffeescript file
+  // Run coffeescript spec
 
   // open plugins directory
 
-  // -G for find in project
+  // ok/cancel dialog for creating new coffeescript file
 
-  // sass bundle
+  // coffeescript bundle
+
+  // -G for find in project
 
   // to see output:
   // sublime.log_commands(True)
@@ -57,5 +72,4 @@
   // run spec
   // http://pastebin.com/qVSjKFNV
   // http://sublimetext.userecho.com/topic/94718-open-terminal-here-as-tab-instead-of-window-if-possible/
-
 ]

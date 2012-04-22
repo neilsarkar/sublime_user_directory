@@ -1,0 +1,5 @@
+<snippet>
+  <content><![CDATA[page.should have_content ]]></content>
+  <tabTrigger>page</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>

@@ -4,7 +4,6 @@ import os
 
 class OpenCoffeeTwinCommand(sublime_plugin.WindowCommand):
   def run(self):
-    # print("feck")
     self.views = []
     window = self.window
     current_file_path = self.window.active_view().file_name()
@@ -17,4 +16,9 @@ class OpenCoffeeTwinCommand(sublime_plugin.WindowCommand):
     if os.path.exists(twin_path) :
       window.open_file(twin_path)
     else :
-      sublime.status_message("Could not find " + twin_path)
+      # ok_cancel_dialog is in the API docs but is not implemented yet
+      # if sublime.ok_cancel_dialog("Create file: "+twin_path, "Yeah, fuck it"):
+      open(twin_path,"w").close()
+      window.open_file(twin_path)
+      # else:
+      #   sublime.status_message("Could not find " + twin_path)

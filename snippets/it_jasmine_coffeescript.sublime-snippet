@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+it "${1}", ->
+
+]]></content>
+  <tabTrigger>it</tabTrigger>
+  <scope>source.coffee</scope>
+</snippet>
