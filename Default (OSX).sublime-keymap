@@ -56,8 +56,7 @@
   // close all other tabs
   {
     "keys": ["super+alt+w"],
-    "command": "close_others_by_index",
-    "args": { "group": 0, "index": 0 }
+    "command": "close_other_tabs"
   }
 
   // make command+shift+d de-select the next match
