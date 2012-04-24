@@ -1,19 +1,19 @@
 [
-  // cmd+ctrl+, = open this file
+  // open this keybindings file
   {
     "keys": ["super+ctrl+,"],
     "command": "open_file",
     "args": {"file": "${packages}/User/Default ($platform).sublime-keymap"}
   },
 
-  // cmd+l = go to line
+  // go to line
   {
     "keys": ["super+l"],
     "command": "show_overlay",
     "args": {"overlay": "goto", "text": ":"}
   },
 
-  // cmd+shift+c = copy file name
+  // copy file name
   {
     "keys": ["super+shift+c"],
     "command": "copy_path_to_clipboard"
@@ -57,6 +57,19 @@
   {
     "keys": ["super+alt+w"],
     "command": "close_other_tabs"
+  },
+
+  // focus on side bar
+  {
+    "keys": ["ctrl+shift+tab"],
+    "command": "focus_side_bar"
+  },
+
+  // focus back in buffer
+  {
+    "keys": ["ctrl+tab"],
+    "command": "focus_group",
+    "args": {"group": 0}
   }
 
   // make command+shift+d de-select the next match
