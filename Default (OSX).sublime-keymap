@@ -70,6 +70,18 @@
     "keys": ["ctrl+tab"],
     "command": "focus_group",
     "args": {"group": 0}
+  },
+
+  {
+    "keys": ["super+r"],
+    "command": "run_tests",
+    "args": {"single": false}
+  },
+
+  {
+    "keys": ["super+shift+r"],
+    "command": "run_tests",
+    "args": {"single": true}
   }
 
   // make command+shift+d de-select the next match
@@ -81,8 +93,6 @@
   // open plugins directory
 
   // ok/cancel dialog for creating new coffeescript file
-
-  // coffeescript bundle
 
   // -G for find in project
 
