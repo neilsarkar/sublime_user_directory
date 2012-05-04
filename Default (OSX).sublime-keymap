@@ -78,15 +78,37 @@
     "args": {"single": false}
   },
 
+  // run tests
   {
     "keys": ["super+shift+r"],
     "command": "run_tests",
     "args": {"single": true}
+  },
+
+  // go to symbol
+  {
+    "keys": ["super+shift+t"],
+    "command": "show_overlay",
+    "args": {"overlay": "goto", "text": "@"}
+  },
+
+  // rebuild tags
+  {
+    "keys": ["super+alt+p"],
+    "command": "rebuild_tags"
   }
+
+  // make the rspec switch to twin work for lib things
+
+  // alignment
+
+  // load script directory
 
   // make command+shift+d de-select the next match
 
-  // command+shift+down switch between controller and view
+  // command+alt+down switch between controller and view
+
+  // Auto-detect sass
 
   // Run coffeescript spec
 
@@ -98,8 +120,4 @@
 
   // to see output:
   // sublime.log_commands(True)
-
-  // run spec
-  // http://pastebin.com/qVSjKFNV
-  // http://sublimetext.userecho.com/topic/94718-open-terminal-here-as-tab-instead-of-window-if-possible/
 ]

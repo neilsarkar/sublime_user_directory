@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+I18n.t("${1}")
+]]></content>
+  <tabTrigger>t</tabTrigger>
+  <scope>source.rspec,text.haml,text.html.ruby</scope>
+</snippet>
