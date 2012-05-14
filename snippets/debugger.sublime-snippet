@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
-console.log(${1})
+debugger
 ]]></content>
-  <tabTrigger>cl</tabTrigger>
+  <tabTrigger>dbg</tabTrigger>
   <scope>source.coffee,source.js</scope>
 </snippet>
