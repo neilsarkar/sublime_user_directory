@@ -23,40 +23,78 @@ class OpenRspecFileCommand(sublime_plugin.WindowCommand):
     window = self.window
     current_file_path = self.window.active_view().file_name()
 
-    spec_file = current_file_path.find("/spec/") > 0
     twin_path = get_twin_path(current_file_path)
-    path_parts = twin_path.split("/")
-    dirname = "/".join(path_parts[0:-1])
-    basename = path_parts[-1]
-
-    if not os.path.exists(twin_path) and sublime.ok_cancel_dialog(basename + " was not found. Create it?"):
-      self.mkdir_p(dirname)
-      twin_file = open(twin_path, "w")
-
-      constant_name = self.camelize(basename.replace(".rb", "").replace("_spec", ""))
-
-      if spec_file:
-        twin_file.write("class " + constant_name + "\nend")
-      else:
-        twin_file.write("require \"spec_helper\"\n\ndescribe " + constant_name + " do\nend")
-      twin_file.close()
 
     if os.path.exists(twin_path):
       view = window.open_file(twin_path)
     else:
-      sublime.status_message("Not found: " + twin_path)
+      matches = self.find_twin_candidates(current_file_path)
+      matches.append("Create "+twin_path)
 
+      def process_selection(option):
+        if( option == matches.__len__() - 1):
+          self.create_new_file(twin_path)
+        elif( option == -1):
+          print "Cancelled dialog"
+          # do nothing
+        else:
+          window.open_file(matches[option])
+      window.show_quick_panel(matches, process_selection)
 
-  def mkdir_p(self, path):
+  def create_new_file(self, path):
+    window = self.window
+    path_parts = path.split("/")
+    dirname = "/".join(path_parts[0:-1])
+    basename = path_parts[-1]
+
     try:
-        os.makedirs(path)
+        os.makedirs(dirname)
     except OSError as exc: # Python >2.5
         if exc.errno == errno.EEXIST:
             pass
         else: raise
 
+    twin_file = open(path, "w")
+
+    constant_name = self.camelize(basename.replace(".rb", "").replace("_spec", ""))
+
+    if basename.find("_spec") > 0:
+      twin_file.write("class " + constant_name + "\nend")
+    else:
+      twin_file.write("require \"spec_helper\"\n\ndescribe " + constant_name + " do\nend")
+    twin_file.close()
+
+    print(path)
+
+    view = window.open_file(twin_file)
+    self.views.append(view)
+
+
+  def find_twin_candidates(self, file_path):
+    is_spec = file_path.find("/spec/") > 0
+
+    base_name = re.search(r"\/(\w+)\.(\w+)$", file_path).group(1)
+    base_name = re.sub('_spec', '', base_name)
+
+    if is_spec:
+      matcher = re.compile("[/\\\\]" + base_name + "\.rb$")
+    else:
+      matcher = re.compile("[/\\\\]" + base_name + "_spec\.rb$")
+
+    window = self.window
+    candidates = []
+    for root, dirs, files in os.walk(window.folders()[0]):
+      for f in files:
+        if re.search(r"\.rb$", f):
+          cur_file = os.path.join(root, f)
+          if matcher.search(cur_file):
+            candidates.append(cur_file)
+
+    return candidates
+
   def camelize(self, string):
     return re.sub(r"(?:^|_)(.)", lambda x: x.group(0)[-1].upper(), string)
+
 
 class RunTests(sublime_plugin.TextCommand):
   def run(self, edit, single):

@@ -1,4 +1,8 @@
 [
+  // to see output:
+  // sublime.log_commands(True)
+
+
   // open this keybindings file
   {
     "keys": ["super+ctrl+,"],
@@ -23,6 +27,11 @@
   {
     "keys": ["ctrl+]"],
     "command": "navigate_to_definition"
+  },
+
+  {
+    "keys": ["super+alt+p"],
+    "command": "rebuild_tags"
   },
 
   // go to alternate file
@@ -72,13 +81,13 @@
     "args": {"group": 0}
   },
 
+  // run tests
   {
     "keys": ["super+r"],
     "command": "run_tests",
     "args": {"single": false}
   },
 
-  // run tests
   {
     "keys": ["super+shift+r"],
     "command": "run_tests",
@@ -90,12 +99,6 @@
     "keys": ["super+shift+t"],
     "command": "show_overlay",
     "args": {"overlay": "goto", "text": "@"}
-  },
-
-  // rebuild tags
-  {
-    "keys": ["super+alt+p"],
-    "command": "rebuild_tags"
   }
 
   // make the rspec switch to twin work for lib things
@@ -108,16 +111,9 @@
 
   // command+alt+down switch between controller and view
 
-  // Auto-detect sass
-
   // Run coffeescript spec
 
-  // open plugins directory
-
-  // ok/cancel dialog for creating new coffeescript file
+  // create new coffeescript file in new directory
 
   // -G for find in project
-
-  // to see output:
-  // sublime.log_commands(True)
 ]
