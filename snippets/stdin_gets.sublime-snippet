@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+print '$stdin.gets...'; \$stdin.gets
+]]></content>
+  <tabTrigger>std</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>

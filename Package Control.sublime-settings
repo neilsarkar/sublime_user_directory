@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1336263457,
+	"auto_upgrade_last_run": 1340202106,
 	"installed_packages":
 	[
 		"Alignment",
@@ -8,6 +8,7 @@
 		"DetectSyntax",
 		"Git",
 		"Jasmine",
+		"LESS",
 		"Package Control",
 		"RSpec",
 		"Sass",
