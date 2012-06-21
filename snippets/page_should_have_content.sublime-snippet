@@ -1,5 +1,5 @@
 <snippet>
-  <content><![CDATA[page.should have_content ]]></content>
+  <content><![CDATA[page.should have_content($1)]]></content>
   <tabTrigger>page</tabTrigger>
   <scope>source.ruby</scope>
 </snippet>
