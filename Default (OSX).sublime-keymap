@@ -99,6 +99,13 @@
     "keys": ["super+shift+t"],
     "command": "show_overlay",
     "args": {"overlay": "goto", "text": "@"}
+  },
+
+  // find and replace by default
+  {
+    "keys": ["super+f"],
+    "command": "show_panel",
+    "args": {"panel": "replace"}
   }
 
   // make the rspec switch to twin work for lib things
