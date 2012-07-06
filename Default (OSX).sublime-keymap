@@ -104,6 +104,12 @@
     "keys": ["super+f"],
     "command": "show_panel",
     "args": {"panel": "replace"}
+  },
+
+  // use textmate replace next
+  {
+    "keys": ["super+alt+f"],
+    "command": "replace_next"
   }
 
   // make the auto whitespace stripper not fuck with everything
