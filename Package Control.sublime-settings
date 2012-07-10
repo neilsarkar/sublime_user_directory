@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1340202106,
+	"auto_upgrade_last_run": 1341928505,
 	"installed_packages":
 	[
 		"Alignment",
@@ -11,6 +11,7 @@
 		"LESS",
 		"Package Control",
 		"RSpec",
+		"Ruby Slim",
 		"Sass",
 		"Theme - Soda"
 	]
