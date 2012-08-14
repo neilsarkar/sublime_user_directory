@@ -2,7 +2,6 @@
   // to see output:
   // sublime.log_commands(True)
 
-
   // open this keybindings file
   {
     "keys": ["super+ctrl+,"],
@@ -38,8 +37,7 @@
   // super+ctrl+. will show spec and implementation in split view
   {
     "keys": ["ctrl+shift+down"],
-    "command": "open_rspec_file",
-    "args": {"option": "next"}
+    "command": "open_rspec_file"
   },
 
   // Duplicate selection
@@ -108,6 +106,16 @@
     "args": {"panel": "replace"}
   }
 
+  // make the auto whitespace stripper not fuck with everything
+
+  // rectangular select
+
+  // apple+alt+f to replace next
+
+  // markdown preview
+
+  // make command+shift+d de-select the next match
+
   // make the rspec switch to twin work for lib things
 
   // markdown preview
@@ -115,8 +123,6 @@
   // alignment
 
   // load script directory
-
-  // make command+shift+d de-select the next match
 
   // command+alt+down switch between controller and view
 

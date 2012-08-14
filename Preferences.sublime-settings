@@ -1,6 +1,7 @@
 {
 	"auto_complete_commit_on_tab": true,
 	"color_scheme": "Packages/Color Scheme - Default/Blackboard.tmTheme",
+	"detect_slow_plugins": false,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -42,7 +43,7 @@
 		"log"
 	],
 	"font_face": "Monaco",
-	"font_size": 22,
+	"font_size": 21.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -59,6 +60,5 @@
 	"tab_size": 2,
 	"theme": "Soda Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"detect_slow_plugins": false
+	"trim_trailing_white_space_on_save": true
 }

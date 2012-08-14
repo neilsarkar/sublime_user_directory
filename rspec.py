@@ -18,7 +18,7 @@ def get_twin_path(path):
       return path.replace("/app/", "/spec/").replace(".rb", "_spec.rb")
 
 class OpenRspecFileCommand(sublime_plugin.WindowCommand):
-  def run(self, option):
+  def run(self):
     self.views = []
     window = self.window
     current_file_path = self.window.active_view().file_name()
@@ -31,14 +31,14 @@ class OpenRspecFileCommand(sublime_plugin.WindowCommand):
       matches = self.find_twin_candidates(current_file_path)
       matches.append("Create "+twin_path)
 
-      def process_selection(option):
-        if( option == matches.__len__() - 1):
+      def process_selection(choice):
+        if( choice == matches.__len__() - 1):
           self.create_new_file(twin_path)
-        elif( option == -1):
+        elif( choice == -1):
           print "Cancelled dialog"
           # do nothing
         else:
-          window.open_file(matches[option])
+          window.open_file(matches[choice])
       window.show_quick_panel(matches, process_selection)
 
   def create_new_file(self, path):

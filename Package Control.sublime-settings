@@ -1,11 +1,12 @@
 {
-	"auto_upgrade_last_run": 1341928505,
+	"auto_upgrade_last_run": 1344869553,
 	"installed_packages":
 	[
 		"Alignment",
 		"CoffeeScript",
 		"CTags",
 		"DetectSyntax",
+		"Gist",
 		"Git",
 		"Jasmine",
 		"LESS",
