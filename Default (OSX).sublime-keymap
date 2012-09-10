@@ -83,13 +83,17 @@
   {
     "keys": ["super+r"],
     "command": "run_tests",
-    "args": {"single": false}
+    "args": {"scope": "file"}
   },
-
   {
     "keys": ["super+shift+r"],
     "command": "run_tests",
-    "args": {"single": true}
+    "args": {"scope": "line"}
+  },
+  {
+    "keys": ["super+alt+ctrl+r"],
+    "command": "run_tests",
+    "args": {"scope": "last"}
   },
 
   // go to symbol
