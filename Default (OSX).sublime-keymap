@@ -98,9 +98,8 @@
 
   // go to symbol
   {
-    "keys": ["super+shift+t"],
-    "command": "show_overlay",
-    "args": {"overlay": "goto", "text": "@"}
+    "keys": ["super+ctrl+alt+t"],
+    "command": "reopen_last_file"
   },
 
   // find and replace by default
@@ -116,29 +115,15 @@
     "command": "replace_next"
   }
 
-  // make the auto whitespace stripper not fuck with everything
-
-  // rectangular select
-
-  // apple+alt+f to replace next
-
-  // markdown preview
-
-  // make command+shift+d de-select the next match
-
-  // make the rspec switch to twin work for lib things
-
-  // markdown preview
-
-  // alignment
-
-  // load script directory
+  // TODO:
 
   // command+alt+down switch between controller and view
 
-  // Run coffeescript spec
+  // make the auto whitespace stripper not fuck with the current cursor's line
 
-  // create new coffeescript file in new directory
+  // auto-align section
 
-  // -G for find in project
+  // markdown preview
+
+  // make command+shift+d skip (and ideally deselect) the next match
 ]
