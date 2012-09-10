@@ -1,2 +1,3 @@
 .DS_STORE
-RubyTest.last-run
+*.last-run
+*.pyc
