@@ -98,6 +98,12 @@
 
   // go to symbol
   {
+    "keys": ["super+shift+t"],
+    "command": "show_overlay",
+    "args": {"overlay": "goto", "text": "@"}
+  },
+
+  {
     "keys": ["super+ctrl+alt+t"],
     "command": "reopen_last_file"
   },
