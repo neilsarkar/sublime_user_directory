@@ -1,10 +1,11 @@
 on execInNewTab(_title, _command)
   tell application "Terminal"
     activate
+    set settings to "Basic"
     set currentTab to do script _command
     set custom title of tab 1 of window 1 to _title
   end
-end execInTerminalTab
+end execInNewTab
 
 on execInTerminalTab(_command, _window, _tab)
   tell application "Terminal"
