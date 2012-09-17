@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1344869553,
+	"auto_upgrade_last_run": 1347893864,
 	"installed_packages":
 	[
 		"Alignment",
@@ -10,6 +10,7 @@
 		"Git",
 		"Jasmine",
 		"LESS",
+		"Markdown Preview",
 		"Package Control",
 		"RSpec",
 		"Ruby Slim",

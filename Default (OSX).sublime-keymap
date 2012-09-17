@@ -119,17 +119,32 @@
   {
     "keys": ["super+alt+f"],
     "command": "replace_next"
+  },
+
+  // use textmate? replace all
+  {
+    "keys": ["super+alt+ctrl+f"],
+    "command": "replace_all"
+  },
+
+  // reindent
+  {
+    "keys": ["super+ctrl+["],
+    "command": "reindent",
+    "args": {"single_line": false}
   }
+
+  // super+k, super+d = deselect this match
 
   // TODO:
 
+  // after stripping whitespace, hit 'tab' if current cursor is on a blank non-terminal line
+
+  // Test history, select from last 10 unique runs
+
   // command+alt+down switch between controller and view
 
-  // make the auto whitespace stripper not fuck with the current cursor's line
+  // keyboard shortcut to open up whole user directory
 
-  // auto-align section
-
-  // markdown preview
-
-  // make command+shift+d skip (and ideally deselect) the next match
+  // rectangular select with option
 ]
