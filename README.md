@@ -2,9 +2,7 @@ Take a look at `Default (OSX).sublime-keymap` to see what is provided, modified,
 
 Patches/issues welcome.
 
-Had to remove Package Control from the repo as the auto upgrade was causing conflicts.
-
-Here are the packages currently installed:
+Package Control settings are not in this repo. Here are the packages currently installed:
 
 - Alignment
 - CoffeeScript
