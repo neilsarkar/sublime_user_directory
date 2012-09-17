@@ -138,8 +138,6 @@
 
   // TODO:
 
-  // after stripping whitespace, hit 'tab' if current cursor is on a blank non-terminal line
-
   // Test history, select from last 10 unique runs
 
   // command+alt+down switch between controller and view
