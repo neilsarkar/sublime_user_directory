@@ -138,9 +138,17 @@
 
   // TODO:
 
+  // Only reindent if cursor was indented
+
+  // Check ruby syntax with ruby -wc
+
+  // Fix different terminal settings when running tests again
+
   // Test history, select from last 10 unique runs
 
   // command+alt+down switch between controller and view
+
+  // command+alt+down switch between js view and template
 
   // keyboard shortcut to open up whole user directory
 
