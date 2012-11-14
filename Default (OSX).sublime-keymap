@@ -132,6 +132,12 @@
     "keys": ["super+ctrl+["],
     "command": "reindent",
     "args": {"single_line": false}
+  },
+
+  // check ruby syntax
+  {
+    "keys": ["alt+shift+v"],
+    "command": "check_ruby_syntax"
   }
 
   // super+k, super+d = deselect this match
