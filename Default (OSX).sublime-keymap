@@ -53,6 +53,13 @@
     "context": [ {"key": "selector", "operator": "equal", "operand": "source.coffee"} ]
   },
 
+  // select coffeescript twin
+  {
+    "keys": ["ctrl+shift+down"],
+    "command": "open_javascript_twin",
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.js"} ]
+  },
+
   // compile and display coffeescript
   {
     "keys": ["super+b"],
