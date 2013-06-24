@@ -44,9 +44,10 @@
 		"log"
 	],
 	"font_face": "Monaco",
-	"font_size": 22.0,
+	"font_size": 21.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
+	"hot_exit": false,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -57,6 +58,7 @@
 	{
 		"show_minimap": false
 	},
+	"remember_open_files": false,
 	"save_on_focus_lost": true,
 	"tab_size": 2,
 	"theme": "Soda Light.sublime-theme",
