@@ -145,6 +145,17 @@
   {
     "keys": ["alt+shift+v"],
     "command": "check_ruby_syntax"
+  },
+
+  // paste and indent by default
+  {
+    "keys": ["super+v"],
+    "command": "paste_and_indent"
+  },
+
+  {
+    "keys": ["super+alt+v"],
+    "command": "paste"
   }
 
   // super+k, super+d = deselect this match

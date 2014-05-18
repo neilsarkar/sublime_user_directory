@@ -1,8 +1,11 @@
 {
-	"auto_complete_commit_on_tab": true,
 	"color_scheme": "Packages/Color Scheme - Default/Blackboard.tmTheme",
 	"detect_slow_plugins": false,
 	"ensure_newline_at_eof_on_save": true,
+	"env":
+	{
+		"PATH": "/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+	},
 	"file_exclude_patterns":
 	[
 		".DS_Store",
@@ -26,7 +29,9 @@
 		"*.psd",
 		"*.db",
 		"*.pdf",
-		"chromedriver.log"
+		"chromedriver.log",
+		"tags",
+		"d3.*js"
 	],
 	"folder_exclude_patterns":
 	[
@@ -41,10 +46,11 @@
 		"bin",
 		"script",
 		"tmp",
-		"log"
+		"log",
+		"binaries"
 	],
 	"font_face": "Monaco",
-	"font_size": 21.0,
+	"font_size": 18.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
@@ -61,7 +67,6 @@
 	"remember_open_files": false,
 	"save_on_focus_lost": true,
 	"tab_size": 2,
-	"theme": "Soda Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }

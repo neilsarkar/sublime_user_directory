@@ -2,3 +2,6 @@
 *.last-run
 *.pyc
 Package\ Control.sublime-settings
+Package\ Control.system-ca-bundle
+Package\ Control.cache
+GoSublime/osx-x64
