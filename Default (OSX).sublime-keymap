@@ -39,46 +39,11 @@
     "command": "rebuild_tags"
   },
 
-  // go to alternate file
-  // super+ctrl+. will show spec and implementation in split view
-  {
-    "keys": ["ctrl+shift+down"],
-    "command": "open_rspec_file"
-  },
-
   // Duplicate selection
   { "keys": ["ctrl+shift+d"], "command": "duplicate_line" },
 
   // show in project drawer
   { "keys": ["ctrl+super+r"], "command": "reveal_in_side_bar"},
-
-  // select coffeescript twin
-  {
-    "keys": ["ctrl+shift+down"],
-    "command": "open_coffee_twin",
-    "context": [ {"key": "selector", "operator": "equal", "operand": "source.coffee"} ]
-  },
-
-  // select coffeescript twin
-  {
-    "keys": ["ctrl+shift+down"],
-    "command": "open_javascript_twin",
-    "context": [ {"key": "selector", "operator": "equal", "operand": "source.js"} ]
-  },
-
-  // compile and display coffeescript
-  {
-    "keys": ["super+b"],
-    "command": "compile_and_display_js",
-    "context": [ {"key": "selector", "operator": "equal", "operand": "source.coffee"} ]
-  },
-
-  {
-    "keys": ["super+r"],
-    "command": "gs9o_open",
-    "args": {"run": ["replay"] },
-    "context": [ {"key": "selector", "operator": "equal", "operand": "source.go"} ]
-  },
 
   // close all other tabs
   {
@@ -99,36 +64,11 @@
     "args": {"group": 0}
   },
 
-  // run tests
-  {
-    "keys": ["super+r"],
-    "command": "run_tests",
-    "args": {"scope": "file"},
-    "context": [ {"key": "selector", "operator": "equal", "operand": "source.ruby"} ]
-  },
-  {
-    "keys": ["super+shift+r"],
-    "command": "run_tests",
-    "args": {"scope": "line"},
-    "context": [ {"key": "selector", "operator": "equal", "operand": "source.ruby"} ]
-  },
-  {
-    "keys": ["super+alt+ctrl+r"],
-    "command": "run_tests",
-    "args": {"scope": "last"},
-    "context": [ {"key": "selector", "operator": "equal", "operand": "source.ruby"} ]
-  },
-
   // go to symbol
   {
-    "keys": ["super+shift+t"],
+    "keys": ["super+ctrl+t"],
     "command": "show_overlay",
     "args": {"overlay": "goto", "text": "@"}
-  },
-
-  {
-    "keys": ["super+ctrl+alt+t"],
-    "command": "reopen_last_file"
   },
 
   // find and replace by default
@@ -172,23 +112,82 @@
   {
     "keys": ["super+alt+v"],
     "command": "paste"
-  }
+  },
 
   // super+k, super+d = deselect this match
 
+  /*
+    RUBY
+  */
+  {
+    "keys": ["ctrl+shift+down"],   // super+ctrl+. will show spec and implementation in split view
+    "command": "open_rspec_file",
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.ruby"} ]
+  },
+  {
+    "keys": ["super+r"],
+    "command": "run_tests",
+    "args": {"scope": "file"},
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.ruby"} ]
+  },
+  {
+    "keys": ["super+shift+r"],
+    "command": "run_tests",
+    "args": {"scope": "line"},
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.ruby"} ]
+  },
+  {
+    "keys": ["super+alt+ctrl+r"],
+    "command": "run_tests",
+    "args": {"scope": "last"},
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.ruby"} ]
+  },
+
+  /*
+    GOLANG
+  */
+  // select golang twin
+  {
+    "keys": ["ctrl+shift+down"],
+    "command": "open_javascript_twin",
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.js"} ]
+  },
+
+  // run golang main package
+  {
+    "keys": ["super+r"],
+    "command": "gs9o_open",
+    "args": {"run": ["replay"] },
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.go"} ]
+  },
+
+  /*
+    COFFEESCRIPT
+  */
+  // compile and display coffeescript
+  {
+    "keys": ["super+b"],
+    "command": "compile_and_display_js",
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.coffee"} ]
+  },
+  // select coffeescript twin
+  {
+    "keys": ["ctrl+shift+down"],
+    "command": "open_coffee_twin",
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.coffee"} ]
+  },
+
+  /*
+    JAVASCRIPT
+  */
+  // select javascript twin
+  {
+    "keys": ["ctrl+shift+down"],
+    "command": "open_javascript_twin",
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.js"} ]
+  }
+
   // TODO:
-
-  // Only reindent if cursor was indented
-
-  // Check ruby syntax with ruby -wc
-
-  // Fix different terminal settings when running tests again
-
-  // Test history, select from last 10 unique runs
-
-  // command+alt+down switch between controller and view
-
-  // command+alt+down switch between js view and template
 
   // keyboard shortcut to open up whole user directory
 
