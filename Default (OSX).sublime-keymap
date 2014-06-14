@@ -22,6 +22,12 @@
     "command": "copy_path_to_clipboard"
   },
 
+  // clone pane
+  {
+    "keys": ["super+alt+2"],
+    "command": "clone_pane"
+  },
+
   // ctags
   {
     "keys": ["ctrl+]"],
@@ -67,6 +73,13 @@
     "context": [ {"key": "selector", "operator": "equal", "operand": "source.coffee"} ]
   },
 
+  {
+    "keys": ["super+r"],
+    "command": "gs9o_open",
+    "args": {"run": ["replay"] },
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.go"} ]
+  },
+
   // close all other tabs
   {
     "keys": ["super+alt+w"],
@@ -90,17 +103,20 @@
   {
     "keys": ["super+r"],
     "command": "run_tests",
-    "args": {"scope": "file"}
+    "args": {"scope": "file"},
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.ruby"} ]
   },
   {
     "keys": ["super+shift+r"],
     "command": "run_tests",
-    "args": {"scope": "line"}
+    "args": {"scope": "line"},
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.ruby"} ]
   },
   {
     "keys": ["super+alt+ctrl+r"],
     "command": "run_tests",
-    "args": {"scope": "last"}
+    "args": {"scope": "last"},
+    "context": [ {"key": "selector", "operator": "equal", "operand": "source.ruby"} ]
   },
 
   // go to symbol

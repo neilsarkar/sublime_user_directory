@@ -2,3 +2,5 @@
 *.last-run
 *.pyc
 Package\ Control.sublime-settings
+Package\ Control*
+GoSublime*
