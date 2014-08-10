@@ -33,7 +33,10 @@
     "keys": ["ctrl+]"],
     "command": "navigate_to_definition"
   },
-
+  {
+    "keys": ["ctrl+["],
+    "command": "jump_prev"
+  },
   {
     "keys": ["super+alt+p"],
     "command": "rebuild_tags"
