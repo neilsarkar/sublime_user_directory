@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[save_and_open_page #BITCHEZ]]></content>
+    <content><![CDATA[save_and_open_page]]></content>
     <tabTrigger>sop</tabTrigger>
     <scope>source.ruby</scope>
     <description>save_and_open_page</description>

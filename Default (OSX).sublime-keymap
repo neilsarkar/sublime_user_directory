@@ -15,6 +15,12 @@
     "command": "show_overlay",
     "args": {"overlay": "goto", "text": ":"}
   },
+  // go to line
+  {
+    "keys": ["super+shift+t"],
+    "command": "show_overlay",
+    "args": {"overlay": "goto", "text": "@"}
+  },
 
   // copy file name
   {
@@ -189,10 +195,4 @@
     "command": "open_javascript_twin",
     "context": [ {"key": "selector", "operator": "equal", "operand": "source.js"} ]
   }
-
-  // TODO:
-
-  // keyboard shortcut to open up whole user directory
-
-  // rectangular select with option
 ]

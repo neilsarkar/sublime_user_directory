@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+angular.module('$1').directive('$2', [
+  '$3'
+  function($3) {
+    return {
+      link: function(scope, $el, attrs) {
+        $4
+      }
+    }
+  }
+])]]></content>
+  <tabTrigger>angd</tabTrigger>
+  <scope>source.js</scope>
+</snippet>
