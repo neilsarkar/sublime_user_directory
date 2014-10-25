@@ -1,9 +1,9 @@
 <snippet>
   <content><![CDATA[
-if err != nil {
-  $1return err
+if $1; err != nil {
+  $2return err
 }
 ]]></content>
-  <tabTrigger>ife</tabTrigger>
+  <tabTrigger>ifee</tabTrigger>
   <scope>source.go</scope>
 </snippet>
