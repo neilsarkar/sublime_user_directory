@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-if $1; err != nil {
+if err := $1; err != nil {
   $2return err
 }
 ]]></content>

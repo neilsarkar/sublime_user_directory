@@ -4,7 +4,7 @@ angular.module('$1').directive('$2', [
   '$3'
   function($3) {
     return {
-      link: function(scope, $el, attrs) {
+      link: function(\$scope, \$el, attrs) {
         $4
       }
     }
